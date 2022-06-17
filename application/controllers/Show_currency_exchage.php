@@ -8,7 +8,7 @@ class Show_currency_exchage extends CI_Controller {
     public function __construct() {        
         parent::__construct();
     }
-	public function rate_from_euro($amount=null,$to_currency=null){
+	public function index($amount=null,$to_currency=null){
 
         if(!empty($amount) && !empty($to_currency)){
             $curl = curl_init();
